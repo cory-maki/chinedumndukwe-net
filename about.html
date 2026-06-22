@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>About Chinedum Ndukwe | Real Estate Developer &amp; Community Leader | Cincinnati</title>
+<meta name="description" content="Learn about Chinedum Ndukwe — Notre Dame graduate, former NFL player, and founder of Kingsley and Company, a Cincinnati real estate development firm focused on affordable housing and community enrichment."/>
+<link rel="canonical" href="https://chinedumndukwe.netlify.app/about.html"/>
+
+<!-- Open Graph -->
+<meta property="og:type" content="profile"/>
+<meta property="og:title" content="About Chinedum Ndukwe | Real Estate Developer &amp; Community Leader | Cincinnati"/>
+<meta property="og:description" content="Chinedum Ndukwe — Notre Dame graduate, former NFL player, and founder of Kingsley and Company, building affordable housing in Cincinnati."/>
+<meta property="og:image" content="https://chinedumndukwe.netlify.app/images/hero.jpg"/>
+<meta property="og:url" content="https://chinedumndukwe.netlify.app/about.html"/>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/style.css"/>
+
+<!-- JSON-LD Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://chinedumndukwe.netlify.app/#person",
+      "name": "Chinedum Ndukwe",
+      "jobTitle": "Founder, Kingsley and Company",
+      "url": "https://chinedumndukwe.netlify.app/",
+      "image": "https://chinedumndukwe.netlify.app/images/hero.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cincinnati",
+        "addressRegion": "OH",
+        "addressCountry": "US"
+      },
+      "description": "Chinedum Ndukwe is the founder of Kingsley and Company, a Cincinnati-based real estate development firm focused on affordable housing and community enrichment. Former NFL player (Cincinnati Bengals and Oakland Raiders) and Notre Dame graduate.",
+      "alumniOf": [
+        {"@type": "CollegeOrUniversity", "name": "University of Notre Dame"},
+        {"@type": "CollegeOrUniversity", "name": "Harvard Business School"},
+        {"@type": "CollegeOrUniversity", "name": "Wharton School of Business"}
+      ],
+      "sameAs": [
+        "https://www.pinterest.com/chinedumndukwe0476/",
+        "https://soundcloud.com/chinedumndukwe",
+        "https://linktr.ee/chinedumndukwecincinnati",
+        "https://issuu.com/chinedumndukwe",
+        "https://my.archdaily.com/us/@chinedum-ndukwe-cincinnati",
+        "https://www.goodreads.com/user/show/198464614-chinedum-ndukwe-cincinnati",
+        "https://github.com/ChinedumNdukweCincinnati",
+        "https://www.beatstars.com/chinedumndukwe",
+        "https://huggingface.co/ChinedumNdukweCincinnati",
+        "https://www.tumblr.com/chinedumndukwecincinnati",
+        "https://bandcamp.com/chinedumndukwecincinnati",
+        "https://vimeo.com/chinedumndukwecincinnati",
+        "https://wikialpha.co/wiki/User:ChinedumNdukweCincinnati",
+        "https://www.podbean.com/user-K17nroiYAfpw",
+        "https://www.reddit.com/user/ChinedumNdukwe/",
+        "https://substack.com/@chinedumndukwecincinnati",
+        "https://clarity.fm/chinedumndukwe-cincinnati",
+        "https://mastodon.social/@ChinedumNdukweCincinnati"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://chinedumndukwe.netlify.app/#website",
+      "url": "https://chinedumndukwe.netlify.app/",
+      "name": "Chinedum Ndukwe",
+      "publisher": {"@id": "https://chinedumndukwe.netlify.app/#person"}
+    },
+    {
+      "@type": "AboutPage",
+      "url": "https://chinedumndukwe.netlify.app/about.html",
+      "name": "About Chinedum Ndukwe",
+      "mainEntity": {"@id": "https://chinedumndukwe.netlify.app/#person"}
+    }
+  ]
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+(function(){
+  const _sb=supabase.createClient('https://aowblircaymwuymcmllh.supabase.co','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFvd2JsaXJjYXltd3V5bWNtbGxoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIzMzExMjcsImV4cCI6MjA2NzkwNzEyN30.qS7jxVwu83zEYMvxNo7C_2dtVrSZ6wYIFiNtoN69UkQ');
+  const _cid='Chinedum Ndukwe';
+  async function loadSBLinks(){
+    const[{data:soc},{data:news}]=await Promise.all([
+      _sb.from('social_media').select('*').eq('client_id',_cid),
+      _sb.from('news_links').select('*').eq('client_id',_cid)
+    ]);
+    const render=(ids,data)=>ids.forEach(id=>{
+      const el=document.getElementById(id);
+      if(!el||!data)return;
+      el.innerHTML='';
+      data.forEach(l=>{
+        const a=document.createElement('a');
+        a.href=l.url;a.target='_blank';a.rel='noopener noreferrer';a.title=l.name;
+        a.innerHTML='<img src="'+l.icon+'" alt="'+l.name+'" style="width:30px;height:30px;border-radius:4px"/>';
+        el.appendChild(a);
+      });
+    });
+    render(['sml-soc-about'],soc);
+    render(['sml-news-about'],news);
+  }
+  document.addEventListener('DOMContentLoaded',loadSBLinks);
+})();
+</script>
+</head>
+<body>
+
+<!-- ══ NAV ═══════════════════════════════════════════════════════ -->
+<nav id="main-nav">
+  <a class="nav-logo" href="/">Chinedum<span> Ndukwe</span></a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a class="active" href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ══ PAGE HERO ═════════════════════════════════════════════════ -->
+<div class="pg-hero">
+  <p class="eyebrow" style="color:rgba(255,255,255,.55)">Learn More</p>
+  <h1>Chinedum Ndukwe</h1>
+  <p class="pg-sub">Founder of Kingsley and Company — building affordable housing and stronger communities in Cincinnati, Ohio.</p>
+</div>
+
+<!-- ══ PROFILE CARD ══════════════════════════════════════════════ -->
+<div class="pc-wrap">
+  <div class="pc">
+    <div class="pc-ph"><img src="images/hero.jpg" alt="Chinedum Ndukwe"/></div>
+    <div>
+      <div class="pc-nm">Chinedum Ndukwe</div>
+      <div class="pc-rl">Founder, Kingsley and Company</div>
+      <div class="pc-lc">&#128205; Cincinnati, Ohio</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ ABOUT SECTIONS + SIDEBAR ══════════════════════════════════ -->
+<div class="am-wrap">
+  <div class="am-inner">
+    <div>
+
+      <div class="csec">
+        <p class="cey">Background</p>
+        <h2>Virginia Roots, Notre Dame Education</h2>
+        <p>Chinedum Ndukwe was born in Virginia to two Nigerian immigrants who instilled in him the values of hard work, education, and community. He earned a double degree in Business Management and Psychology from the <strong>University of Notre Dame</strong> in 2007, developing the analytical and interpersonal tools that would define his approach to both sport and enterprise. His time at Notre Dame went beyond the classroom — it was where he began thinking seriously about the relationship between institutions and the communities that surround them.</p>
+        <p>After graduating, Ndukwe deepened his business acumen through executive education at Harvard Business School (2008) and the <strong>Wharton School of Business at the University of Pennsylvania</strong> through the NFL Business Management Program (2009). These programs, designed for athletes transitioning into professional life, exposed him to deal structuring, leadership strategy, and the economics of large-scale development — knowledge he would eventually bring directly to Kingsley and Company. You can explore more of his thinking and reading interests on <a href="https://www.goodreads.com/user/show/198464614-chinedum-ndukwe-cincinnati" target="_blank" rel="noopener">his Goodreads profile</a>.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">NFL Career</p>
+        <h2>Five Years as a Professional Athlete</h2>
+        <p>Drafted into the NFL, Chinedum played five seasons with the <strong>Cincinnati Bengals and Oakland Raiders</strong>, competing at the highest level of professional football. The NFL demands more than athletic talent — it requires discipline, film study, split-second decision-making, and the ability to execute under pressure in front of tens of thousands of spectators. These habits of mind shaped the leader he became.</p>
+        <p>When he retired from professional football in 2012, Ndukwe didn't step away from competition — he redirected it. The same intensity he brought to the field, he brought to a new arena: commercial real estate development in one of America's most dynamic mid-sized cities. His <a href="nfl-to-real-estate.html">lessons from the NFL</a> became the operating principles of Kingsley and Company.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Kingsley and Company</p>
+        <h2>Real Estate with a Community Mission</h2>
+        <p>Founded by Ndukwe after his NFL retirement, <strong>Kingsley and Company</strong> is a Cincinnati-based real estate development firm committed to expanding access to affordable housing and catalyzing neighborhood revitalization. The firm operates at the intersection of financial discipline and social responsibility — evaluating every project not just by its return on investment, but by its return on community.</p>
+        <p>The firm's flagship projects include <strong>The Blair</strong> and <strong>Victory Vistas</strong>, a development where Kingsley and Company secured 11 housing vouchers for low-income individuals. These projects demonstrate what Ndukwe argues is a false choice between profitability and impact. Read more about his approach to <a href="affordable-housing-cincinnati.html">affordable housing development in Cincinnati</a> and why he believes mixed-income communities are both a social good and a sound investment. His architectural perspectives are also featured on <a href="https://my.archdaily.com/us/@chinedum-ndukwe-cincinnati" target="_blank" rel="noopener">his ArchDaily profile</a>.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Civic Engagement</p>
+        <h2>Boards, Task Forces &amp; Community Roles</h2>
+        <p>Chinedum Ndukwe's contribution to Cincinnati extends well beyond the development deals he closes. He has served on multiple boards and civic bodies in the Midwest, including the <strong>Mayor of Cincinnati's Task Force for Immigration</strong>, the <strong>Notre Dame Athletics Monogram Board of Directors</strong>, and the <strong>Mercy Health Board of Directors</strong>. These roles reflect a conviction that developers have an obligation to show up in the civic spaces where their projects will ultimately stand.</p>
+        <p>He is also a recognized voice in entrepreneurial circles, having been named to the <strong>Power 25</strong> list and participating in the <strong>ITW Young Professionals Network</strong>. These honors signal what his community already knows: Ndukwe is building something larger than a portfolio. Chinedum also shares perspectives and community updates via <a href="https://substack.com/@chinedumndukwecincinnati" target="_blank" rel="noopener">his Substack newsletter</a>. For a full overview of his work and connections, visit <a href="https://linktr.ee/chinedumndukwecincinnati" target="_blank" rel="noopener">his Linktree</a>.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Philosophy</p>
+        <h2>Development as Community Investment</h2>
+        <p>At the core of Chinedum's work is a belief that's simple to state and difficult to execute: the best real estate developments don't just occupy communities — they strengthen them. Every project Kingsley and Company undertakes is evaluated against that standard. It asks: who will live here, what opportunities does this create, and what does the neighborhood look like five years after we break ground?</p>
+        <p>This philosophy shapes not just what Ndukwe builds, but how he builds it — through transparent partnerships with civic leaders, nonprofit organizations, and local stakeholders who have a genuine stake in the outcome. It's the philosophy behind <a href="community-centered-development.html">community-centered development</a>, and it's why Kingsley and Company's work resonates beyond the Cincinnati real estate market.</p>
+      </div>
+
+    </div>
+
+    <aside class="sidebar-facts">
+      <div class="sb-box">
+        <div class="sb-title">Quick Facts</div>
+        <div class="fr"><span class="fl">Name</span><span class="fv">Chinedum Ndukwe</span></div>
+        <div class="fr"><span class="fl">Location</span><span class="fv">Cincinnati, OH</span></div>
+        <div class="fr"><span class="fl">Company</span><span class="fv">Kingsley and Company</span></div>
+        <div class="fr"><span class="fl">Education</span><span class="fv">Notre Dame, Harvard, Wharton</span></div>
+        <div class="fr"><span class="fl">NFL Teams</span><span class="fv">Bengals &amp; Raiders</span></div>
+        <div class="fr"><span class="fl">Focus</span><span class="fv">Affordable Housing</span></div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- ══ SOCIAL + PRESS ACCORDION ══════════════════════════════════ -->
+<div class="acc-section" style="background:var(--off)">
+  <div class="acc-wrap">
+    <button class="acc-btn" onclick="tog(this,'s-about')">Follow Chinedum Ndukwe on Social Media <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="s-about"><div id="sml-soc-about" class="social-media-list"></div></div>
+    <button class="acc-btn" onclick="tog(this,'n-about')">Chinedum Ndukwe in the Press <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="n-about"><div id="sml-news-about" class="social-media-list"></div></div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Chinedum Ndukwe. All rights reserved. &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+
+<script>
+function tog(btn,id){
+  const c=document.getElementById(id),open=c.classList.contains('open');
+  document.querySelectorAll('.acc-body').forEach(e=>e.classList.remove('open'));
+  document.querySelectorAll('.acc-btn').forEach(e=>e.classList.remove('open'));
+  if(!open){c.classList.add('open');btn.classList.add('open');}
+}
+</script>
+</body>
+</html>
